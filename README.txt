@@ -5,11 +5,9 @@ de estilos para nuestro blog y mejorar así su diseño.
 
  
 
-Utilizando la estructura básica en html crea un archivo similar al que se muestra (ver imagen 1)
+Utilizando la estructura básica en html:
 -Mejora esta estructura básica aplicando un diseño adecuado para nuestro blog de cocina. 
 
- 
-
-Incluye también enlaces a la elaboración de la receta de manera que muestre la imagen del plato y su elaboración. 
+ Incluye también enlaces a la elaboración de la receta de manera que muestre la imagen del plato y su elaboración. 
 Deberás crear una hoja de estilos para que se muestre de manera similar a la siguiente: 
 imagen 2
