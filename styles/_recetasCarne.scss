@@ -1,0 +1,46 @@
+.mechada {
+    @include articleGeneral();
+    .cabecera1 {
+        @include cabecera1General();
+    }
+    h2 {
+        padding-top: 90px;
+        font-size: 3em;
+    }
+}
+
+.imgReceta {
+    @include imagenesRecetas();
+}
+
+.OssoBuco {
+    @include articleGeneral();
+    .cabecera2 {
+        @include cabecera2General();
+    }
+    h2 {
+        padding-top: 90px;
+        font-size: 3em;
+    }
+}
+
+
+/*      background-color: $bgColorFooter; */
+
+button {
+    @include vinculosPaginas();
+    @include buttonGenral();
+}
+
+@media (max-width: 640px) {
+    /* Código CSS que solo aplica a pantallas con ancho > 480 */
+    body {
+        background-color: black;
+        font-size: 10px;
+        color: white;
+    }
+    .imgReceta {
+        animation: none;
+        display: none;
+    }
+}

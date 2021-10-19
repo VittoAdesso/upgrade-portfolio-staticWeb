@@ -1,0 +1,82 @@
+body {
+    background-color: $bgColorGeneral;
+    /*  background-image: url("fondo2.jpg");
+    /*   background-size: 500%; */
+}
+
+img {
+    @include imagenNavegacionPpal();
+}
+
+
+/* luego le llamo con elk keyframes y nombre que le di a la imagen
+y con ello le doy parámetros */
+
+@keyframes animacion-chef {
+    0% {
+        top: 0;
+        left: 0;
+    }
+    35% {
+        top: -40px;
+        left: 800px;
+    }
+    50% {
+        top: 70px;
+        left: 50px;
+    }
+    100% {
+        top: 0;
+        left: 180px;
+    }
+}
+
+nav {
+    display: row;
+    justify-content: center;
+    align-items: center;
+    align-content: space-around;
+    a {
+        text-decoration: $decoracionLinks;
+        color: black;
+        &:hover {
+            background-color: $bgHover;
+            color: $colorTextHover;
+            transition: background-color .5s;
+        }
+    }
+}
+
+.menu1,
+.menu2 {
+    background-color: #724a0a;
+    font-size: 3em;
+    display: flex;
+    justify-content: space-around;
+    padding-top: 10px;
+    padding-bottom: 15px;
+}
+
+.subMenu1,
+.subMenu2 {
+    font-size: 2em;
+    display: flex;
+    justify-content: space-around;
+}
+
+@media (max-width: 480px) {
+    /* Código CSS que solo aplica a pantallas con ancho > 480 */
+    body {
+        background-color: black;
+        font-size: 10px;
+        color: white;
+    }
+    img {
+        animation: none;
+        display: none;
+        .imagenCh {
+            display: flex;
+            flex-wrap: wrap;
+        }
+    }
+}

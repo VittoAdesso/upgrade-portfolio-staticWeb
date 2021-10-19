@@ -1,0 +1,77 @@
+/* función para todo artcile en general que cree */
+
+@mixin articleGeneral() {
+    display: flex;
+    justify-content: center;
+    background: $bgColorArticles;
+    padding-bottom: 10px;
+}
+
+
+/* función para todo vinculo que me lleve a un sitio */
+
+@mixin vinculosPaginas() {
+    a:hover {
+        background-color: $bgHover;
+        color: $colorTextHover;
+        text-decoration: $decoracionLinks;
+        text-align: center;
+    }
+}
+
+
+/* función para imagenes de recetas */
+
+@mixin imagenesRecetas() {
+    border-radius: 20px;
+    border-style: solid;
+    display: block;
+    justify-content: center;
+    /*  para darle opacidad... */
+    /* opacity: 0.4; */
+    z-index: 0;
+}
+
+
+/* función para ahorrar lineas de codigo en receteas  */
+
+@mixin cabecera1General() {
+    padding-top: 10px;
+    display: flex;
+    justify-content: space-evenly;
+    width: 100vw;
+}
+
+
+/* 
+función para ahorrar lineas de codigo en receteas  */
+
+@mixin cabecera2General() {
+    padding-top: 10px;
+    display: flex;
+    justify-content: space-evenly;
+    width: 100vw;
+}
+
+@mixin imagenNavegacionPpal() {
+    border-radius: 80px;
+    border-style: solid;
+    color: white;
+    /* position: absolute; */
+    position: relative;
+    z-index: -1;
+    animation-duration: 6s;
+    position: relative;
+    /*     Importante ponerle nombre a la imagen, sin ello no hace nada */
+    animation-name: animacion-chef;
+}
+
+@mixin buttonGenral() {
+    border: 2px solid;
+    border-radius: 12px;
+    font-size: 40px;
+    width: 100%;
+    cursor: pointer;
+    background-color: $bgColorGeneral;
+    border: none;
+}
